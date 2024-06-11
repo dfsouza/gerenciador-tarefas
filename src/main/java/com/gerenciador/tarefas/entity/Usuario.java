@@ -1,12 +1,18 @@
 package com.gerenciador.tarefas.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.List;
 
 @Entity
 @Table(name = "usuarios")
+@Data
+@Getter
+@Setter
 public class Usuario implements Serializable {
 
     private static final Long serialVersionUID = 1L;
